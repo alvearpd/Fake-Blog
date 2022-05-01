@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Fake Blog</title>
+    <style>
+        h1 {
+            color: rgb(212, 28, 28);
+            text-align: center;
+            font-weight: bold;
+        } 
+
+        h2 {
+            color: rgb(212, 28, 28);
+            text-align: center;
+            font-weight: bold;  
+        }
+
+        body {
+            background-color: black;
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            color:white;
+        }
+
+        form {
+            color:white;
+        }
+        </style>   
+        </head>
+<body>
+    <header>
+        <h1>My favorite Guitar blog</h1>
+        <h2>DEAN</h2>
+    </header>
+    <img src="dean.jpg" alt="guitar">
+    <a href= "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.edroman.com%2Fguitars%2Fdean%2Fdimebag.htm&psig=AOvVaw2A4kREaxlGw8dSx6fNkoU1&ust=1607484656518000&source=images&cd=vfe&ved=0CEQQr4kDahcKEwjgmfeBur3tAhUAAAAAHQAAAAAQBQ">Pic from edroman click here for Dean guitar dealer</a><br>  
+    <a href="https://www.deanguitars.com/">Click here to go to Dean Guitars</a> 
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id sagittis tortor. Vivamus et lorem accumsan purus pulvinar convallis. Suspendisse placerat leo mauris, bibendum gravida sem vehicula sed. Mauris erat nibh, lobortis non justo lobortis, laoreet finibus orci. Nam elementum dui et nisi semper, ut pulvinar ipsum convallis. Nam sed neque neque. Nullam eleifend posuere nisl, eget maximus metus. In dictum, ipsum vitae eleifend aliquet, eros nulla sollicitudin orci, eget condimentum purus velit eu diam. Mauris nec vestibulum ex, et interdum nunc.
+        Donec auctor nisi nulla, eu ultricies justo tristique feugiat. Sed erat nunc, scelerisque id viverra fermentum, imperdiet ut enim. Praesent nisi eros, pretium ac neque vitae, tempor faucibus purus. Nunc et nisi in tortor pharetra mattis convallis vel mauris. Ut sed sollicitudin metus. Mauris maximus lorem dolor, et dignissim magna faucibus et. Sed nec arcu tincidunt, porta ante pretium, faucibus est.
+        Maecenas leo metus, sodales eu ex quis, finibus vestibulum orci. Proin viverra, libero ut eleifend ullamcorper, lorem sapien vestibulum metus, pharetra vehicula felis dolor et dolor. Nam elit enim, vehicula facilisis elementum id, sagittis eget neque. Mauris lacinia euismod nulla, placerat faucibus risus facilisis quis. Donec tortor orci, vehicula vitae accumsan vitae, placerat id magna. Nulla facilisi. Quisque ultrices blandit magna, a finibus libero tincidunt quis. Etiam vitae neque non nibh laoreet lobortis ut et sem. Vestibulum porta convallis erat, sed aliquam lacus. Nulla et libero eu velit bibendum dictum sit amet vitae ante. Integer id tempor lectus, non gravida orci.
+        Morbi vestibulum, sapien ac vestibulum vehicula, purus erat consequat nibh, vel dignissim purus augue sit amet nulla. Vivamus sit amet dapibus nisl. Pellentesque at nulla libero. Vestibulum cursus magna non ligula fringilla, ac auctor magna sodales. Vestibulum id auctor massa, sed mollis ligula. Phasellus mattis lectus a est sagittis, eget feugiat nisl accumsan. Maecenas et rhoncus odio. Sed vitae enim molestie, varius sapien ac, ultrices arcu. Curabitur consectetur dui quis auctor fermentum. Vestibulum vel dignissim libero, in volutpat purus. Sed tristique sagittis erat, convallis elementum tortor. In diam leo, gravida non scelerisque sed, efficitur nec dolor. Nam non efficitur mi, ac lacinia quam. Donec eros justo, consequat in lectus ut, egestas lobortis felis. Sed vel velit vitae ligula ultricies aliquam.
+        Ut accumsan suscipit tortor. Nullam laoreet risus nec mi molestie scelerisque. Praesent id consequat nulla. Praesent tempor est purus, ut molestie lacus commodo ut. Ut congue iaculis iaculis. Nam congue ante a euismod pretium. Cras ac pretium massa, quis molestie diam. Sed venenatis lobortis lorem in congue. Quisque sodales congue velit varius consequat. Mauris eleifend eleifend purus. In molestie purus elit, non porttitor nibh feugiat ut. Donec id ex consequat, commodo justo a, ullamcorper magna.</p>
+
+        <form action="process.php" method="post">
+            <h3>Club Form</h3><br>
+        
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"><br>
+            <br>
+        
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br>
+            <br>
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <br>
+        
+            <p>Select your posion:</p>
+            <label for="rock">Rock</label>
+            <input type="radio" id="rock" name="genre" value="rock">
+        
+            <label for="country">Country</label>
+            <input type="radio" id="country" name="genre" value="country">
+        
+            <label for="heavymetal">Heavy metal</label>
+            <input type="radio" id="heavymetal" name="genre" value="heavymetal"><br>
+
+            <label for="decline">None of these</label>
+            <input type="radio" id="decline" name="genre" value="decline"><br>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <label for="pw_confirm">Password Confirmation:</label>
+            <input type="password" id="pw_confirm" name="password_confirmation">
+        
+            <p>A description what made you like guitar:</p>
+            <textarea name="description"></textarea><br>
+            <p>Favorite guitar</p>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+            <option value="Gibson">
+            </option>
+            <option value="Fender">
+            </option>
+            <option value="Dean">
+            </option>
+            <option value="PSR">
+            </option>
+            <option value="LTD">
+            </option>
+            <option value="Not Lisetd">
+            </option>
+            </datalist><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
